@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/addAct.css">
+</head
+<body>
+    <section>
+        <input type="checkbox" id="check" style="display:none">
+<label for="check" class="add">add action</label>
+        <div class="con-add-action">
+            <div class="box-add-action">
+                <form action="/fetch" method="post">
+                    <input type="text" name="amount" id="amount" placeholder="amount">
+                    <input type="date" name="date" id="date" value="2018-01-01" min="2018-04-01" max="2019-01-01" required>
+                    <textarea name="description" id="des" cols="20" rows="5"></textarea>
+                    <input type="submit" value="add">
+                    <label id="can" for="check">cansel</label>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.add {
+    width: 183px;
+    height: 130px;
+    background: white;
+}
+.add input{
+    display: block
+}

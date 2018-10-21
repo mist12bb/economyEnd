@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="/boxStyles/box.css">
+<link rel="stylesheet" href="/boxStyles/act.css">
+<div class="box-display-actions">
+
+
+        <div class="col amountCol">
+                <%myData.forEach(data=>{%>
+                <p  data-id = <%=data.amount%> >
+                        <%=data.amount%>
+                </p>
+                <%})%>
+        </div>
+        <div class="col">
+
+                <%myData.forEach(data=>{%>
+                        <p  data-id = <%=data.amount%> >
+                                <%=data.payDay.split("T")[0]%>
+                        </p>
+                        <%})%>
+                </div>
+                <div class="col">
+                                <%myData.forEach(data=>{%>
+                                        <p data-id = <%=data.amount%> >
+                                                <%=data.category%>
+                                        </p>
+                                        <%})%>
+
+                </div>
+                <div class="col">
+                        <%myData.forEach(data=>{%>
+                                <p   data-id = <%=data.amount%> >
+                                        <%=data.description%>
+                                </p>
+                                <%})%>
+                        </div>
+                        <div class="col">
+                                
+                                <%myData.forEach(data=>{%>
+                                        <p>
+                                              <button data-id = <%=data.amount%> > x </button>
+                                        </p>
+                                        <%})%>
+
+                </div>
+</div>
+
+<script src="/js/app.js"></script>

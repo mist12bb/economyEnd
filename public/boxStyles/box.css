@@ -1,0 +1,45 @@
+/*  */
+.actions{
+    background: coral;
+   
+}
+.actionDisplay {
+
+    display: grid;
+    width: 80%; 
+    grid-auto-rows: auto;
+    grid-template-columns: auto auto;
+    /* to remove latere */
+}
+/*  */
+.titles{
+    display: grid;
+    background: white;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-column: 1/3;
+    grid-column-gap: 20px;
+    grid-row: 1/2;
+    grid-template-columns: 1fr 1fr 1fr 2fr .4fr;
+}
+
+.title {
+    text-align: center;
+      padding: 10px;
+      color: #EB5757;
+  }
+  
+  .title:hover {
+      background: antiquewhite
+  }
+  .des_tilte{
+    flex: 1 1 auto;
+  }
+  
+  .girdPage {
+      display: grid;
+      
+     
+      grid-auto-rows: auto;
+      grid-template-columns: auto auto;
+  }
